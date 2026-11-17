@@ -303,3 +303,6 @@ jobs:
           path: |
             artifacts
             buildlog
+          # isndotbiz: ~250 MB per build, daily schedule; the 90-day default filled the
+          # account artifact quota (2026-11-17). The IPA itself ships via TestFlight.
+          retention-days: 3
